@@ -1,0 +1,15 @@
+1 SELECT * FROM `teachers`;
+
+2 SELECT `name` FROM `departments`;
+
+3 SELECT * FROM `students` WHERE `name` LIKE 'E%';
+
+4 SELECT * FROM `students` WHERE `enrolment_date` like '2021%';
+
+5 SELECT * FROM `courses` WHERE `website` IS NULL;
+
+6 SELECT * FROM `teachers` WHERE `phone` is NOT NULL;
+
+7 SELECT * FROM `exams` WHERE `date` < '2020-06-1' AND `date` >= '2010-07-30';
+
+8 SELECT * FROM `students` WHERE `registration_number` IS NOT NULL;
