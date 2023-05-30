@@ -25,3 +25,16 @@
 4 SELECT DAY(date), COUNT(*) AS exam_numbers FROM exams WHERE MONTH(date)= 7 GROUP by DAY(date);
 
 //-------------------------------Join-------------------------------//
+1 SELECT * FROM `students` INNER JOIN degrees on students.degree_id = degrees.department_id WHERE `department_id` = 9;
+
+2 SELECT * FROM `departments` INNER JOIN degrees on degrees.department_id = departments.id WHERE `department_id` = 7;
+
+3 SELECT * FROM `course_teacher` INNER JOIN teachers on course_teacher.teacher_id = teachers.id WHERE id = 44;
+
+4 
+
+5 
+
+6 
+
+7 
