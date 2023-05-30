@@ -1,3 +1,4 @@
+//-------------------------------Select-------------------------------//
 1 SELECT * FROM `teachers`;
 
 2 SELECT `name` FROM `departments`;
@@ -13,3 +14,14 @@
 7 SELECT * FROM `exams` WHERE `date` < '2020-06-1' AND `date` >= '2010-07-30';
 
 8 SELECT * FROM `students` WHERE `registration_number` IS NOT NULL;
+
+//-------------------------------Group By-------------------------------//
+1 SELECT `cfu` FROM `courses` GROUP BY `cfu`;
+
+2 SELECT COUNT(*) AS students_number, YEAR(date_of_birth) FROM `students` GROUP BY YEAR(date_of_birth);
+
+3 SELECT exam_id, MIN(vote) FROM exam_student GROUP BY exam_id;
+
+4 SELECT DAY(date), COUNT(*) AS exam_numbers FROM exams WHERE MONTH(date)= 7 GROUP by DAY(date);
+
+//-------------------------------Join-------------------------------//
